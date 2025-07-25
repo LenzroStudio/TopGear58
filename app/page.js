@@ -31,11 +31,11 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen relative">
       <Image src={Logo} className="w-50 rounded-full" alt="TG58_Logo" />
-      <i className="text-2xl md:text-3xl absolute top-52">
+      <i className="text-xl md:text-3xl absolute top-52">
         Driven by Trust, Powered by Care
       </i>
       <div className="flex flex-col items-center justify-center mt-4">
-        <h1 className="text-5xl">
+        <h1 className="text-3xl md:text-5xl text-center">
           WE ARE <span className="text-red-500">LAUNCHING</span> SOON
         </h1>
         {/* Countdown Timer */}
