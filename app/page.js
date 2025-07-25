@@ -2,6 +2,7 @@
 import { Logo } from "@/public/images/images";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { FaTiktok, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function getTimeLeft(targetDate) {
   const now = new Date();
@@ -64,6 +65,25 @@ export default function Home() {
               In the meantime, follow us on our social media channels for
               updates.
             </p>
+          </div>
+          {/* Social Media Icons */}
+          <div className="flex flex-row gap-6 mt-6 justify-center w-full">
+            <a
+              href="https://www.tiktok.com/@topgear.58"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+            >
+              <FaTiktok className="text-2xl hover:text-red-500 transition-colors" />
+            </a>
+            <a
+              href="https://www.instagram.com/topgear.58/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram className="text-2xl hover:text-red-500 transition-colors" />
+            </a>
           </div>
         </div>
       </div>
