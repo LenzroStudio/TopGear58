@@ -30,10 +30,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen relative px-4 py-8">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8">
       <div className="flex flex-col items-center w-full max-w-2xl">
-        <Image src={Logo} className="w-50 rounded-full" alt="TG58_Logo" />
-        <i className="text-xl md:text-3xl absolute top-52 mt-2 text-center w-full left-0">
+        <Image src={Logo} className="w-72 bg-black rounded-full !p-2 rounded-full" alt="TG58_Logo" />
+        <i className="text-xl md:text-2xl mt-7 text-center w-full left-0">
           Driven by Trust, Powered by Care
         </i>
         <div className="flex flex-col items-center justify-center mt-20  w-full">
