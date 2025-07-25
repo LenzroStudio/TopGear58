@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Logo } from "@/public/images/images";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -29,39 +29,42 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen relative">
-      <Image src={Logo} className="w-50 rounded-full" alt="TG58_Logo" />
-      <i className="text-xl md:text-3xl absolute top-52">
-        Driven by Trust, Powered by Care
-      </i>
-      <div className="flex flex-col items-center justify-center mt-4">
-        <h1 className="text-3xl md:text-5xl text-center">
-          WE ARE <span className="text-red-500">LAUNCHING</span> SOON
-        </h1>
-        {/* Countdown Timer */}
-        <div className="flex flex-row gap-[3rem] mt-4  p-4 rounded-lg shadow">
-          <div className="flex flex-col items-center p-3 border-b-2 border-b-red-500">
-            <span className="text-3xl font-bold">{timeLeft.days}</span>
-            <span className="text-xs">Days</span>
+    <div className="flex flex-col items-center justify-center min-h-screen relative px-4 py-8">
+      <div className="flex flex-col items-center w-full max-w-2xl">
+        <Image src={Logo} className="w-50 rounded-full" alt="TG58_Logo" />
+        <i className="text-xl md:text-3xl absolute top-52 mt-2 text-center w-full left-0">
+          Driven by Trust, Powered by Care
+        </i>
+        <div className="flex flex-col items-center justify-center mt-20  w-full">
+          <h1 className="text-3xl md:text-5xl text-center">
+            WE ARE <span className="text-red-500">LAUNCHING</span> SOON
+          </h1>
+          {/* Countdown Timer */}
+          <div className="flex flex-row flex-wrap gap-[3rem] mt-4 p-4 rounded-lg shadow justify-center w-full">
+            <div className="flex flex-col items-center p-3 border-b-2 border-b-red-500 min-w-[70px]">
+              <span className="text-3xl font-bold">{timeLeft.days}</span>
+              <span className="text-xs">Days</span>
+            </div>
+            <div className="flex flex-col items-center p-3 border-b-2 border-b-red-500 min-w-[70px]">
+              <span className="text-3xl font-bold">{timeLeft.hours}</span>
+              <span className="text-xs">Hours</span>
+            </div>
+            <div className="flex flex-col items-center p-3 border-b-2 border-b-red-500 min-w-[70px]">
+              <span className="text-3xl font-bold">{timeLeft.minutes}</span>
+              <span className="text-xs">Minutes</span>
+            </div>
+            <div className="flex flex-col items-center p-3 border-b-2 border-b-red-500 min-w-[70px]">
+              <span className="text-3xl font-bold">{timeLeft.seconds}</span>
+              <span className="text-xs">Seconds</span>
+            </div>
           </div>
-          <div className="flex flex-col items-center p-3 border-b-2 border-b-red-500">
-            <span className="text-3xl font-bold">{timeLeft.hours}</span>
-            <span className="text-xs">Hours</span>
+          <div className="flex flex-col items-center mt-4 text-sm text-center w-full">
+            <p>We are working hard to launch our new website. Stay tuned!</p>
+            <p>
+              In the meantime, follow us on our social media channels for
+              updates.
+            </p>
           </div>
-          <div className="flex flex-col items-center p-3 border-b-2 border-b-red-500">
-            <span className="text-3xl font-bold">{timeLeft.minutes}</span>
-            <span className="text-xs">Minutes</span>
-          </div>
-          <div className="flex flex-col items-center p-3 border-b-2 border-b-red-500">
-            <span className="text-3xl font-bold">{timeLeft.seconds}</span>
-            <span className="text-xs">Seconds</span>
-          </div>
-        </div>
-        <div className="flex flex-col items-center mt-4 text-sm ">
-          <p>We are working hard to launch our new website. Stay tuned!</p>
-          <p>
-            In the meantime, follow us on our social media channels for updates.
-          </p>
         </div>
       </div>
     </div>
